@@ -248,7 +248,7 @@ i {
 
 .image-center {
   grid-column: 3/6;
-  grid-row: 7 / span 10;
+  grid-row: 9 / span 10;
   border-radius: 180px;
 }
 
@@ -256,8 +256,15 @@ i {
   grid-column: 5/-1;
   grid-row: 3 / span 10;
   z-index: 5;
-  border-radius: 180px;
+  border-radius: 100px;
 }
+
+/* .image-below {
+  grid-column: 3/6;
+  grid-row: 1 / span 10;
+  z-index: 2;
+  border-radius: 180px;
+} */
 
 /* Style the text */
 .tagline {
@@ -269,6 +276,17 @@ i {
   margin-bottom: var(--margin-sm);
 }
 
+.btn {
+  display: inline-block;
+  background-color: var(--accent-clr);
+  color: var(--light-clr);
+  padding: 1rem 2.5rem;
+  transition: background-color 0.25s;
+}
+
+.btn:hover {
+  background-color: #15e7eb;
+}
 /* Popular-destinations */
 
 /* Newsletter */
