@@ -76,6 +76,10 @@ i {
   justify-content: center;
 }
 
+.sm-screen-hidden {
+  display: none;
+}
+
 /* header */
 .header {
   background-color: var(--light-clr);
@@ -89,7 +93,7 @@ i {
 .nav {
   height: 8rem;
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: space-between;
   background-color: inherit;
 }
@@ -104,12 +108,58 @@ i {
   width: 3.5rem;
   height: 3.5rem;
   background-color: var(--accent-clr);
+  color: var(--light-clr);
   cursor: pointer;
   transition: color 0.25s;
 }
 
 .menu-close-icon {
   display: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-sm);
+}
+
+.list-link {
+  position: relative;
+}
+
+.list-link::after,
+.list-link.current::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--accent-clr);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.list-link.current::after {
+  opacity: 1 !important;
+}
+
+.list-link:hover::after {
+  opacity: 1;
+}
+
+.nav-mobile {
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  transform: translateY(-100%);
+  z-index: -1;
+  transition: transform 0.25s;
 }
 /* Nav JavaScript styles */
 
