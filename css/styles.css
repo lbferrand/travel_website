@@ -307,6 +307,49 @@ i {
   background-color: #69bfc0;
 }
 /* Popular-destinations */
+.secondary-grid {
+  gap: var(--gap-lg);
+}
+
+.beach-data-wrapper {
+  position: relative;
+}
+
+.beach-data-wrapper.image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.beach-data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.beach-data-inner {
+  width: 100%;
+  background-color: var(--light-clr);
+  padding: 1rem;
+}
+
+.beach-name {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--margin-sm);
+}
+
+.beach-location,
+.beach-location .accent-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-size-xsm);
+}
 
 /* Newsletter */
 
