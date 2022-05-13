@@ -243,16 +243,30 @@ i {
   grid-column: 1/4;
   grid-row: 1 / span 10;
   z-index: 5;
+  border-radius: 180px;
 }
 
 .image-center {
   grid-column: 3/6;
   grid-row: 7 / span 10;
+  border-radius: 180px;
 }
 
 .image-right {
   grid-column: 5/-1;
   grid-row: 3 / span 10;
+  z-index: 5;
+  border-radius: 180px;
+}
+
+/* Style the text */
+.tagline {
+  display: inline-block;
+  font-size: var(--font-size-xsm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  color: var(--accent-clr);
+  margin-bottom: var(--margin-sm);
 }
 
 /* Popular-destinations */
