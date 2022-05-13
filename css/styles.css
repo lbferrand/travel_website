@@ -38,6 +38,31 @@ html {
   /* 10px */
   font-size: 62.5%;
 }
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--dark-clr);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--dark-clr);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+i {
+  font-size: var(--margin-md);
+}
 /* Reusable */
 
 /* header */
