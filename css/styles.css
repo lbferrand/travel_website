@@ -4,7 +4,7 @@
 :root {
   --light-clr: #fff;
   --dark-clr: #504f4f;
-  --accent-clr: #00adcc;
+  --accent-clr: #15e7eb;
 
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
@@ -64,9 +64,53 @@ i {
   font-size: var(--margin-md);
 }
 /* Reusable */
+.container {
+  max-width: 116rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.place-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* header */
+.header {
+  background-color: var(--light-clr);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 
+.nav {
+  height: 8rem;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+.logo {
+  font-size: var(--margin-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--accent-clr);
+}
+
+.menu-toggle-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--accent-clr);
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.menu-close-icon {
+  display: none;
+}
 /* Nav JavaScript styles */
 
 /* Showcase */
