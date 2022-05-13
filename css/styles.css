@@ -77,7 +77,7 @@ i {
 }
 
 .sm-screen-hidden {
-  display: none;
+  display: none !important;
 }
 
 .d-grid {
@@ -248,7 +248,7 @@ i {
 
 .image-center {
   grid-column: 3/6;
-  grid-row: 9 / span 10;
+  grid-row: 8 / span 10;
   border-radius: 180px;
 }
 
@@ -276,16 +276,35 @@ i {
   margin-bottom: var(--margin-sm);
 }
 
+.title {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--margin-md);
+}
+
+.main-title {
+  font-size: var(--font-size-lg);
+}
+
+.accent-text {
+  color: var(--accent-clr);
+}
+
+.description {
+  margin-bottom: var(--margin-lg);
+}
+
 .btn {
   display: inline-block;
   background-color: var(--accent-clr);
   color: var(--light-clr);
   padding: 1rem 2.5rem;
   transition: background-color 0.25s;
+  border-radius: 4px;
+  margin-top: 2px;
 }
 
 .btn:hover {
-  background-color: #15e7eb;
+  background-color: #69bfc0;
 }
 /* Popular-destinations */
 
