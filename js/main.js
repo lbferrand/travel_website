@@ -13,7 +13,15 @@ const toggleMenu = () => {
 menuToggleIcon.addEventListener("click", toggleMenu);
 
 //Add/remove header border bottom on scroll
+const headerScrollEvent = () => {
+  if (this.scrollY >= 30) {
+    headerElement.classList.add("active-scroll");
+  } else {
+    headerElement.classList.remove("active-scroll");
+  }
+};
 
+window.addEventListener("scroll", headerScrollEvent);
 // Add selected link styles to the link clicked and close navigation when clicking the links
 
 // Scroll Reveal
