@@ -4,7 +4,7 @@
 :root {
   --light-clr: #fff;
   --dark-clr: #504f4f;
-  --accent-clr: #00cc90;
+  --accent-clr: #00adcc;
 
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
@@ -26,7 +26,18 @@
   --gap-lg: 4rem;
 }
 /* Base styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
 /* Reusable */
 
 /* header */
