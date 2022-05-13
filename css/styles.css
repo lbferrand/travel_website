@@ -80,6 +80,14 @@ i {
   display: none;
 }
 
+.d-grid {
+  display: grid;
+}
+
+.section {
+  padding-block: var(--section-spacing);
+}
+
 /* header */
 .header {
   background-color: var(--light-clr);
@@ -198,6 +206,54 @@ i {
 }
 
 /* Showcase */
+.showcase {
+  margin-top: 8rem;
+}
+
+.showcase-container {
+  gap: var(--gap-lg);
+}
+
+.image-group {
+  grid-template-columns: 2rem repeat(2, 1fr) 2rem repeat(2, 1fr) 2rem;
+}
+
+.image-box {
+  min-height: 25rem;
+  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.showcase .image-box {
+  min-height: 25rem;
+}
+
+.image-box img {
+  min-height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.image-box:hover img {
+  transform: scale(1.1);
+}
+
+/* Aling and position the pictures */
+.image-left {
+  grid-column: 1/4;
+  grid-row: 1 / span 10;
+  z-index: 5;
+}
+
+.image-center {
+  grid-column: 3/6;
+  grid-row: 7 / span 10;
+}
+
+.image-right {
+  grid-column: 5/-1;
+  grid-row: 3 / span 10;
+}
 
 /* Popular-destinations */
 
